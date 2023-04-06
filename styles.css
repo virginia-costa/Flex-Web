@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+:root {
+    --clr-light-green: #2ad167;
+    --clr-dark-grayish-blue: #2a3342;
+    --clr-grayish-sky-blue: #93a1b6;
+    --clr-alice-blue: #f7f8f9;
+}
+
+
+body {
+    background-color: #f7f8f9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ESTILOS DEL NAV */
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    background-color: #f7f8f9;
+    padding: 0 2rem;
+}
+
+nav img {
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.logoNav {
+    font-weight: bolder;
+    margin-right: auto;
+    color: #2a3342;
+    font-size: 1.6rem;
+}
+
+.containerNav {
+    display: flex;
+    justify-content: center;
+    margin-right: 15rem;
+    align-items: center;
+}
+
+.dropdownNav {
+    display: flex;
+}
+
+.anchorsNav {
+    color: #2a3342;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+nav button {
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+
+}
+.logInNav {
+    background-color: #f7f8f9;
+    color: #2a3342;
+}
+
+.signUpNav {
+    background-color: #2ad167;
+    color: #f7f8f9;
+}
+
+/* LOGO MENÚ OCULTO (PARA LA PARTE RESPONSIVE) */
+
+.menuNavVisibility {
+    display: none;
+}
+
+
+/* ESTILOS DEL MODAL */
+
+.myModal {
+    display: flex;
+    flex-direction: column;
+    background-color: #2a3342;
+    color: #f7f8f9;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    height: 35rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.modalLogo {
+    background-color: #2ad167;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.7rem;
+ }
+
+.modalForm {
+    flex-direction: column;
+    font-size: medium;
+}
+
+.mailModal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.passModal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.checkModal {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: small;
+    justify-content: space-between;
+}
+
+.textFormGreen {
+    color: #2ad167;
+    cursor: pointer;
+}
+
+.inputModal {
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 20rem;
+    border: none;
+}
+
+.accessForm {
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: #2ad167;
+    color: #f7f8f9;
+    border: none;
+    margin-top: 1rem;
+}
+
+.closeModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    color: #f7f8f9;
+    font-size: 1.7rem;
+  }
+
+#myModal {
+    display: none;
+}
+
+    /* Header MNoe */
+
+.row.elementsHeader {
+    margin: 1rem 3rem 6rem 3rem;
+}
+
+.title {
+   font-size: 2.75rem;
+   font-weight: bold;
+   color: #2a3342;
+}
+
+.subtitle{
+    font-size: .95rem;
+    color: #93a1b6;
+}
+
+.btnCheckIn {
+    background-color: #f7f8f9;
+    color: #2a3342;
+}
+
+.btnDemo {
+    background-color: #2ad167;
+    color:#f7f8f9;
+}
+
+.image {
+    margin-top: 2.5rem;
+}
+
+.image > img {
+    max-width: -webkit-fill-available;
+    max-height: -webkit-fill-available;
+}
+
+.leftImageIcon {
+    position: absolute;
+    left: 37rem;
+}
+
+.rightImageIcon {
+    position: absolute;
+    z-index: 1;
+    bottom: 23.5rem;
+    right: 2.5rem;
+}
+
+.text{
+    align-self: center;
+}
+
+.new{
+    background-color: #2ad167;
+    border-radius: .7rem;
+    color:#f7f8f9;
+    width: 4rem;
+    text-align: center;
+}
+
+.flex-container.row {
+    display: flex;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    height: 10rem !important;
+}
+ 
+.imageIcon {
+      display: flex;
+      justify-content: center;
+      background-color: #2ad167;
+      border-radius: .7rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      position: relative;
+      margin-bottom: 1rem;
+}
+
+.imageIcon > img {
+    height: 50%;
+    padding-left: 3%;
+    position: relative;
+    top: 20%;
+    filter: invert(100%);
+}
+
+.cardItem {
+    text-align: -webkit-center; 
+}
+
+.productTitle {
+      text-align: center;
+      font-size: .95rem;
+      color: #2a3342;
+}
+
+.productSubtitle {
+      text-align: center;
+      font-size: .5rem;
+      color: #93a1b6;
+}
+
+/* Precios CSS */
+
+.title-price{
+    margin-left: 6rem;
+    display: flex;    
+    align-content: center;
+    color: #2a3342;
+    font-weight: bolder;
+}
+
+.precios-flexibles{
+margin-top: 2rem;
+}
+
+.paragraph{
+    margin-left: 6rem;
+    display: flex;
+    align-content: center;
+    color: #93a1b6;
+}
+
+.precio{
+    color: #2ad167;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card-title{
+    color: #2ad167;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card{
+    background-color: #f7f8f9;
+    border:none;
+    padding: 10px 10px 40px 20px;
+}
+
+.card-body{
+    padding: 0rem;
+}
+
+.btn-c {
+    background-color: #2ad167;
+    width: 18rem;
+}
+.h2 {
+    padding: 0;
+    font-weight: bolder;
+}
+
+.monthCard {
+    font-weight: bolder;
+}
+
+
+.list-group {
+    margin-left: 1.5rem;
+}
+
+.card-text{
+    color: #93a1b6;
+    font-weight: 400;
+}
+
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 1,
+'wght' 400,
+'GRAD' 0,
+'opsz' 20
+}
+
+
+.card::after {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+  transform: scale(1.02, 1.02);
+  -webkit-transform: scale(1.02, 1.02);
+  backface-visibility: hidden; 
+  will-change: transform;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.75) !important;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card:hover .btn-outline-primary{
+  color:white;
+  background:#007bff;
+}
+
+/* Footer CSS Pablo */
+.footer-basic {
+    /* width: 100vw !important; */
+    padding:60px 0px 40px 0px;
+    background-color:#2a3342;
+    color:#93a1b6;
+ }
+  
+  
+  .footer-basic ul {
+    padding:0px 0px 50px 0px;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    font-weight: 500;
+    line-height:3;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    }
+  
+  .footer-basic .logo {
+    text-align:center;
+    
+  }
+  
+  .footer-basic .copyright {
+    margin-top:0px;
+    text-align:center;
+    font-size:18px;
+    font-weight: 500;
+    color:#93a1b6;
+    margin-bottom: 2rem;
+  }
+  .texto{
+    display: inline-flex;
+    vertical-align: top;
+    font-size: 30px;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    color: white;
+
+ 
+  }
+  .logo img{
+    width: 40px;
+    
+}
+  
+
+
+/*  DISEÑO RESPONSIVE */
+
+@media screen and (max-width: 391px) {
+
+   /*  IMAGENES HEADER */
+
+    .leftImageIcon {
+        position: absolute;
+        left: 0rem;
+    }
+    
+    .rightImageIcon {
+        position: absolute;
+        z-index: 1;
+        bottom: -1.5rem;
+        right: 0.5rem;
+    }
+
+ /*  SECCIÓN PRECIOS */
+
+     .precios-flexibles{
+        margin-top: 15rem;
+    } 
+
+    .paragraph{
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+        display: flex;
+        align-content: center;
+        color: #93a1b6;
+        text-align: justify;
+    }
+    
+ 
+    /* TAMAÑO MODAL */
+
+    .myModal {
+        display: flex;
+        flex-direction: column;
+        background-color: #2a3342;
+        color: #f7f8f9;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: 22rem;
+        height: 35rem;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* ICONO MENÚ DESPLEGABLE*/
+
+    .menuNavVisibility {
+        display: inline;
+    }
+
+    /* ANCLAS Y BOTONES DEL NAV OCULTOS */
+
+    .dropdownNav {
+        display: none;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #f7f8f9;
+        gap: 0.8rem;
+        font-weight: bold;
+    }
+
+    .containerNav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        gap: 0.5rem;
+    }
+
+    .buttonsNav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .buttonsNav button {
+        background-color: #2ad167;
+        color: #f7f8f9;
+       width: 7rem;
+    }
+}
